@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #1d2944;
+  color: #ffffff;
+  margin-top: 100px;
+}
+a{
+    text-decoration: none;
+    color: rgb(156, 191, 255)
+}
+
+button{
+    background-color: #ffd000;
+    padding: 6px 10px;
+    font-size: large;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover{
+    background:none;
+    border: 1px solid yellow;
+    color: white;
+}
+
+h2{
+  text-align: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #003366;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: left;
+  padding: 4rem 2rem;
+  background: url('./images/Create-a-Hero-Backgr.jpg') no-repeat top center/cover;
+  color: white;
+  height: 80vh;
+  padding: 300px 200px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons .btn {
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  background-color: #ffcc00;
+  color: #003366;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-buttons .btn:hover{
+    background:none;
+    border: 1px solid yellow;
+    color: white;
+}
+
+.btn.secondary {
+  background-color: white;
+  color: #003366;
+  border: 2px solid #003366;
+}
+.margin{
+  width: 100%;
+  height: 70px;
+  background-color: #003366;
+}
+.services, .why-us, .contact {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: rgb(53, 62, 90);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 350px;
+}
+
+.card h3{
+    width: 100%;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    padding: 5px;
+    letter-spacing: 1px;
+    background-color: #252e3f;
+    border-radius: 6px;
+}
+.card ul li{
+    text-align: left;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.why-us{
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.why-us ul {
+  list-style: none;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.why-us li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.contact .btn {
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/*--------Visa Page--------- */
+.visa-header{
+  text-align: center;
+  padding: 2rem;
+}
+
+.visa-header p{
+  color: #ffcc00;
+}
+.main-content {
+  padding: 2rem;
+}
+
+.steps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.steps ol {
+  background-color: white;
+  color: #1d2944;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.steps li {
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+.countries {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.countries h2 {
+  color: #ffcc00;
+}
+
+.country-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.country-card {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+  background-color: #2d3850;
+}
+
+.contact-cta {
+  text-align: center;
+  background-color: #2d3850;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+
+/*------ticket-booking------*/
+
+
+
+.ticket-header {
+  background-color: #003366;
+  color: #ffcc00;
+  text-align: center;
+  padding: 2rem;
+}
+.ticket-header p{
+  color: rgb(0, 255, 0);
+}
+
+.booking-form{
+  width: 100%;
+}
+.booking-form-container{
+  width: 600px;
+}
+.booking-form form {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #252e3f;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ticket-btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.ticket-btn:hover{
+  background-color: #3b4b6e;
+}
+.airlines {
+  text-align: center;
+  margin: 2rem 0;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 2rem;
+}
+
+.airlines h2{
+  color: #ffcc00;
+}
+.airline-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.airlines-logo{
+  flex-direction: column;
+  font-size: larger;
+  font-weight: bold;
+  width: 100px;
+}
+
+.airlines-logo img{
+  width: 100px;
+}
+
+.flight-logo {
+  background-color: rgb(71, 86, 134);
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+.policy ul {
+  background-color: #2d3850;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.policy li {
+  margin-bottom: 1rem;
+}
+
+/* ---------Packages------- */
+
+.packages-intro, .custom-packages {
+  text-align: center;
+  padding: 2rem;
+  background-color: #2d3850;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.package-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.package-card {
+  background-color: #003366;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: left;
+  padding: 1rem;
+  color: #ffffff;
+}
+
+.package-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.package-card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.package-card p {
+  padding: 0 1rem 1rem;
+  font-size: 0.95rem;
+}
+
+.package-card .btn {
+  margin-bottom: 1rem;
+  background-color: #eeff00;
+  padding: 8px;
+  border-radius: 5px;
+  color: #1d2944;
+}
+
+/*--0-------Contact------*/
+
+.contact-intro, .contact-form, .working-process, .socials, .visit-us {
+  padding: 2rem;
+  background-color: #253650;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.working-process ul{
+  list-style: none;
+  line-height: 2rem;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+.social-links img{
+  width: 40px;
+}
+
+.social-links{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.cross{
+  display: none;
+  font-size: xx-large;
+}
+.menu{
+  display: none;
+}
+@media (max-width: 800px) {
+    .hero{
+        padding: 200px 30px;
+        text-align: center;
+    }
+    .hero p{
+        color: #ffffff;
+    }
+    .hero h1{
+        line-height: 3rem;
+    }
+    .logo h1{
+        font-size: large;
+    }
+    .logo img{
+        width: 40px;
+    }
+    body{
+        margin-top: 80px;
+    }
+    .cta-buttons{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .cta-buttons a{
+      width: 100%;
+    }
+
+    .nav-links{
+      display: none;
+    }
+    .nav-links li{
+      margin-bottom: 6px;
+      background-color: #3d3d3d;
+      padding: 8px 2rem;
+    }
+    .menu{
+      display: block;
+      font-size: x-large;
+      cursor: pointer;
+    }
+    .active{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 80px 0px;
+      background-color: #22242c;
+      padding: 1rem 10px;
+      height: 70vh;
+    }
+    .menu-hide{
+      display: none;
+    }
+    .cross-active{
+      display: block;
+      cursor: pointer;
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Booking – Station Ltd</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="./images/Logo STATION.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="./" class="flex">
+        <img src="./images/Logo STATION.png" alt="STATION-Logo" width="60px" box-shadow="0 4px 8px rgba(0, 0, 0, 0.2)">
+        <h1>Station Ltd</h1>
+        </a>
+      </div>
+      <ul class="nav-links" id="nav-list">
+        <li><a href="./#services">Services</a></li>
+        <li><a href="./#why-us">Why Us</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <span class="menu" id="menuBtn">&#9776;</span>
+      <span class="cross" id="crossBtn">&#215;</span>
+    </nav>
+  <header class="ticket-header">
+    <h1>Book Your Flight</h1>
+    <p>Domestic & International Ticketing Made Simple</p>
+  </header>
+
+  <main class="main-content">
+    <div class="booking-form flex">
+    <section class="booking-form-container">
+      <h2>Flight Booking Form</h2>
+      <form action="./send-email.php" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" placeholder="+880 0188952365" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="from">From</label>
+          <input type="text" id="from" name="from" placeholder="Dhaka" required />
+        </div>
+        <div class="form-group">
+          <label for="to">To</label>
+          <input type="text" id="to" name="to" placeholder="Destination" required />
+        </div>
+        <div class="form-group">
+          <label for="date">Departure Date</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="type">Ticket Type</label>
+          <select id="type" name="type">
+            <option>One Way</option>
+            <option>Round Trip</option>
+          </select>
+        </div>
+        <button type="submit" class="ticket-btn">Submit Booking Request</button>
+      </form>
+    </section>
+</div>
+    <section class="airlines">
+      <h2>Partner Airlines</h2>
+      <div class="airline-logos">
+        <div class="airlines-logo flex"><img src="./images/emirates-airlines-1.svg" alt="emirates-logo"> Emirates</div>
+        <div class="airlines-logo flex"><img src="./images/Qatar-Airways-Logo-2006-present.jpg" alt="emirates-logo"> Qatar Airways</div>
+        <div class="airlines-logo flex"><img src="./images/biman-logo-png_seeklogo-19513.png" alt="emirates-logo"> Biman Bangladesh</div>
+        <div class="airlines-logo flex"><img src="./images/turkish-airlines-logo-png_seeklogo-366079.png" alt="emirates-logo"> Turkish Airlines</div>
+      </div>
+    </section>
+
+    <section class="policy">
+      <h2>Refund & Reschedule Policy</h2>
+      <ul>
+        <li>✔️ Refunds available for eligible tickets (conditions apply)</li>
+        <li>✔️ Rescheduling allowed with airline approval</li>
+        <li>✔️ Service charges may apply for changes</li>
+        <li>✔️ We assist with all refund/reschedule requests</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in Touch</h2>
+      <p>📍37/10 SR Plaza, Mazar Road, mirpur-01, Dhaka |<br> 📞 01911121479 | ✉️ info@stationltd.com</p>
+      <a href="./contact.html" class="btn">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Station Ltd. All rights reserved.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
